@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <meta name="fragment" content="!">
+    <meta name="description" content="MEAN app for the Artoo Campus">
+    <meta name="author" content="ArtooCampus">
+    <meta name="application-name" content="UIRouter">
+    <meta name="viewport" content="width=device-width">
+    <title>Artoo Campus - UIRouter</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="app">
+    <div class="container">
+        <div ui-view>
+        </div>
+    </div>
+
+    <!--DIPENDENZE-->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="app.routes.js"></script>
+    <script src="agenda/agenda.controller.js"></script>
+    <script src="agenda/dettaglio.controller.js"></script>
+    <script src="agenda/nuovo.controller.js"></script>
+    <script src="agenda/agenda.service.js"></script>
+    <script src="agenda/agenda.filter.js"></script>
+
+</body>
+
+</html>
